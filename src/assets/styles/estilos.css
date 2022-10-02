@@ -1,0 +1,46 @@
+
+body{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.boton-grid{
+    margin: 10%;
+    background-color: green;
+    height: 100%;
+}
+
+.boton-pag-principal{
+    background-color: brown;
+    height: 100%;
+}
+
+.container-grid{
+    display: grid;
+    margin: auto;
+    margin-top: 15%;
+    background-color: blue;
+    text-align: center;
+    border-radius: 15px;
+    grid-row: 30% 1fr;
+}
+
+.titulo{
+    background-color: bisque;
+}
+
+.div-mapa{
+    width: 40%;
+    margin: auto;
+    align-content: center;
+}
+
+.div-mapa path {
+    fill: gray;
+    stroke: whitesmoke;
+    stroke-width: 2px;
+}
+
+.div-mapa :hover {
+    fill: black;
+}
