@@ -65,3 +65,57 @@ body{
 .div-mapa :hover {
     fill: #4c566a;
 }
+
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: 'Amatic SC';
+}
+
+.menu li a:hover{
+    color: #e5e9f0;
+    transition: all .3s;
+}
+
+.submenu{
+    position: absolute;
+    background: #5e81ac;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Amatic SC';
+    text-decoration: none;
+
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+
+
+}
