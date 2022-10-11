@@ -1,13 +1,13 @@
 
 @font-face {
-    font-family: 'Amatic SC';
+    font-family: 'HelveticaNeue';
     font-style: normal;
     font-weight: normal;
-    src: url(../fonts/AmaticSC-Bold.ttf);
+    src: url(../fonts/HelveticaNeue_1.ttc);
 }
 
 body{
-    font-family: 'Amatic SC';
+    font-family: 'HelveticaNeue';
     margin: auto;
     background-color: #eceff4;
     text-align: center;
@@ -126,7 +126,7 @@ body{
     display: block;
     padding: 15px 20px;
     text-decoration: none;
-    font-family: 'Amatic SC';
+    font-family: 'HelveticaNeue';
 }
 
 .menu li a:hover{
@@ -148,7 +148,7 @@ body{
     display: block;
     padding: 15px;
     color: #fff;
-    font-family: 'Amatic SC';
+    font-family: 'HelveticaNeue';
     text-decoration: none;
 
 }
