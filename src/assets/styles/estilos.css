@@ -1,187 +1,50 @@
+<!DOCTYPE html>
+<html>
 
-@font-face {
-    font-family: 'HelveticaNeue';
-    font-style: normal;
-    font-weight: normal;
-    src: url(../fonts/HelveticaNeue_1.ttc);
-}
+<head>
+  <!--NOS CONVIENE PEGAR EL HEADER DEL LA PÁGINA EN GENERAL-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width">
+  <title>Pingüino Barbijo</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  
+</head>
 
-body{
-    font-family: 'HelveticaNeue';
-    margin: auto;
-    background-color: #eceff4;
-    text-align: center;
-}
+<body>
+  <h1>Pingüino Barbijo</h1>
+  <h4>Pygoscelis antarcticus</h4>
+  <div class="info">
+    <p>Esperanza de vida ➡ 15 a 20 años</p>
+    <p>Fuente de alimentación ➡ Krill, peces y crustáceos</p>
+    <p>Principal depresador ➡ Orcas</p>
+    <p>Tamaño ➡ 75 cm aproximadamente</p>
+    <p>Peso promedio ➞ Entre 3,1 a 5 Kg</p>
+    <p>Población Actual ➡ 8.000.000 especímenes</p>
+  </div>
+  <!--Div para poner abajo de la imagen-->
+  <div class="info2">
+    <p>Estado de vulnerabilidad</p>
+    <p>Una de las especies más pequeñas</p>
+    <p>Es una especie muy amigable</p>
+  </div>
+  
+  <div class="destacado">
+    <img sr width="400" alt=”Pinguino_Barbijo”/>
+  </div>
+  
+  <!--El identifica a tu pinguino-->
+  <div>
+    <h4>Identifica a tu pingüino</h4>
+    <p>Los pingüinos Barbijo se pueden identificar por la <b>pequeña línea que tienen bajo su barbilla</b>, está característica los hace muy distinguibles! </p class="bin">
+    <img src="barbijo_sabias.webp" width="150" alt="Barbijo"/>
+    <img src="binoculares.png" width="200" alt="Binoculares_curiosos"/>
+  </div>
 
-/* Index.html */
-.container-index{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  
 
-.titulo{
-    font-size: 500%;
-    color: #81a1c1;
-    margin-bottom: 0px;
-}
-
-.imagen-inicial{
-    height: 600px;
-    width: 800px;
-}
-
-.rueda-imagenes{
-    width: 25%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.rueda-imagenes ul {
-    display: flex;
-    padding: 0;
-    width: 200%;
-
-    animation: cambio 20s infinite;
-}
-
-@keyframes cambio {
-    0% {margin-left: 0%;}
-    40% {margin-left: 0%;}
-
-    50% {margin-left: -100%;}
-    90% {margin-left: -100%;}
-}
-
-.rueda-imagenes li{
-    width: 100%;
-    list-style: none;
-}
-
-.rueda-imagenes img {
-    width: 100%;
-}
-
-.titulo-2{
-    font-size: 300%;
-    color: #d08770;
-    margin-bottom: 0px;
-}
-
-.palito{
-    height: 5px;
-    width: 200px;
-    background-color: #d08770;
-    margin-bottom: 50px;
-}
-
-.texto-index{
-    font-size: 200%;
-    width: 70%;
-    color: #3b4252;
-}
-
-.boton-index{
-    height: 200px;
-    width: 400px;
-}
+    <script src="script.js"></script>
 
 
-/* Chile.html */
+</body>
 
-.div-mapa{
-    margin: auto;
-    width: 700px;
-    height: 850px;
-
-}
-
-.div-mapa path {
-    fill: #D8DEE9;
-    stroke: #88c0d0;
-    stroke-width: 2px;
-}
-
-.div-mapa :hover {
-    fill: #4c566a;
-}
-
-.navegacion{
-    width: 1000px;
-    margin: 30px auto;
-    background: #fff;
-}
-
-.navegacion ul{
-    list-style: none;
-}
-
-.menu > li{
-    position: relative;
-    display: inline-block;
-
-}
-
-.menu > li > a{
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-family: 'HelveticaNeue';
-}
-
-.menu li a:hover{
-    color: #e5e9f0;
-    transition: all .3s;
-}
-
-.submenu{
-    position: absolute;
-    background: #5e81ac;
-    width: 120%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1.5s;
-    
-}
-
-.submenu li a{
-    display: block;
-    padding: 15px;
-    color: #fff;
-    font-family: 'HelveticaNeue';
-    text-decoration: none;
-
-}
-
-.menu li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
-
-
-}
-
-/* intro.html */
-
-.container-flex{
-    display: flex;
-    margin: auto;
-}
-
-
-
-.ifchile{
-    width: 700px;
-    height: 850px;
-}
-
-.div-pinguinos{
-    width: 1000px;
-}
-
-.div-pinguinos a:hover img {
-    transform: scale(1.15);
-}
-
-.container-index a:hover img {
-    transform: scale(1.15);
-}
+</html>  

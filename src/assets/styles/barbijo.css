@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    background: #eceff4;
+    font-display: Arial, Helvetica, sans-serif;
+    float: right;
+    margin: 50px -30px;
+  }
+  .imagen_1 {
+    float: right;
+    border-radius: 50px 50px 50px 50px;
+  }
+  
+  .info{
+    float:right;
+  }
+  
+  .info2{
+    float: left;
+  }
