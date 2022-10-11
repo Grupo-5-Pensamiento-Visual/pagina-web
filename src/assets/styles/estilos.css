@@ -1,33 +1,84 @@
 
 @font-face {
-    font-family: 'Amatic SC';
+    font-family: 'HelveticaNeue';
     font-style: normal;
     font-weight: normal;
-    src: url(../fonts/AmaticSC-Bold.ttf);
+    src: url(../fonts/HelveticaNeue_1.ttc);
 }
 
 body{
-    font-family: 'Amatic SC';
+    font-family: 'HelveticaNeue';
     margin: auto;
-    background-color: #5e81ac;
+    background-color: #eceff4;
     text-align: center;
 }
 
 /* Index.html */
-
-.container-grid{
-    display: grid;
-    margin: auto;
-    text-align: center;
+.container-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo{
     font-size: 500%;
-    color: #e5e9f0;
+    color: #81a1c1;
+    margin-bottom: 0px;
 }
+
+.imagen-inicial{
+    height: 600px;
+    width: 800px;
+}
+
+.rueda-imagenes{
+    width: 25%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.rueda-imagenes ul {
+    display: flex;
+    padding: 0;
+    width: 200%;
+
+    animation: cambio 20s infinite;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0%;}
+    40% {margin-left: 0%;}
+
+    50% {margin-left: -100%;}
+    90% {margin-left: -100%;}
+}
+
+.rueda-imagenes li{
+    width: 100%;
+    list-style: none;
+}
+
+.rueda-imagenes img {
+    width: 100%;
+}
+
+.titulo-2{
+    font-size: 300%;
+    color: #d08770;
+    margin-bottom: 0px;
+}
+
+.palito{
+    height: 5px;
+    width: 200px;
+    background-color: #d08770;
+    margin-bottom: 50px;
+}
+
 .texto-index{
     font-size: 200%;
-    color: #e5e9f0;
+    width: 70%;
+    color: #3b4252;
 }
 
 .boton-index{
@@ -38,22 +89,11 @@ body{
 
 /* Chile.html */
 
-.container-chile {
-    display: grid;
-    grid-template-columns: 30% 1fr;
-}
-
-.texto-chile{
-    text-align: right;
-    color: #e5e9f0;
-    font-size: 200%;
-}
-
 .div-mapa{
-    width: 60%;
     margin: auto;
-    margin-top: 3%;
-    align-content: center;
+    width: 700px;
+    height: 850px;
+
 }
 
 .div-mapa path {
@@ -86,7 +126,7 @@ body{
     display: block;
     padding: 15px 20px;
     text-decoration: none;
-    font-family: 'Amatic SC';
+    font-family: 'HelveticaNeue';
 }
 
 .menu li a:hover{
@@ -108,7 +148,7 @@ body{
     display: block;
     padding: 15px;
     color: #fff;
-    font-family: 'Amatic SC';
+    font-family: 'HelveticaNeue';
     text-decoration: none;
 
 }
@@ -118,4 +158,30 @@ body{
     opacity: 1;
 
 
+}
+
+/* intro.html */
+
+.container-flex{
+    display: flex;
+    margin: auto;
+}
+
+
+
+.ifchile{
+    width: 700px;
+    height: 850px;
+}
+
+.div-pinguinos{
+    width: 1000px;
+}
+
+.div-pinguinos a:hover img {
+    transform: scale(1.15);
+}
+
+.container-index a:hover img {
+    transform: scale(1.15);
 }
